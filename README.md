@@ -1,6 +1,4 @@
----
-
-# **RAM Cleaner – Automated Memory Optimization for Windows**
+# ✨ **RAM Cleaner – Automated Memory Optimization for Windows**
 
 *A lightweight Windows utility that frees standby memory automatically every 15 minutes.*
 
