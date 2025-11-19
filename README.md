@@ -207,7 +207,7 @@ If your system builds up:
 
 This project uses EmptyStandbyList.exe created by Stefan Pejcic.
 You can find the original project here:
-👉 https://github.com/stefanpejcic/EmptyStandbyList
+🔗 https://github.com/stefanpejcic/EmptyStandbyList
 
 All rights to the executable belong to its original author.
 
