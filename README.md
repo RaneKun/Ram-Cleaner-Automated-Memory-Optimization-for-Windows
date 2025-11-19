@@ -119,6 +119,42 @@ Set-ExecutionPolicy RemoteSigned
 
 ---
 
+### **STEP 4 — Set the Correct User Account (Important)**
+
+After importing the task, you’ll see a random SID value under *“When running the task, use the following user account:”*.
+
+To change this to the correct user:
+
+1. Click **Change User or Group…**
+
+2. You’ll see a window like this:
+
+<img width="1387" height="567" alt="Screenshot 2025-11-19 105036" src="https://github.com/user-attachments/assets/d4cf6a11-f58a-4fdc-b770-d9db2d0a01bb" />
+
+3. In the field labeled **Enter the object name to select**, type your Windows username.
+
+   * Example: `RaneKun`
+
+4. Click **Check Names**
+
+   * If the username is valid, Windows will underline it and correct it automatically.
+
+5. Click **OK** to confirm
+
+6. Now your task will run under the correct user account
+
+💡 **Tip:**
+If you don’t know your exact username, open PowerShell and run:
+
+```powershell
+whoami
+```
+
+Use whatever appears *after* the backslash.
+
+---
+
+
 ## ▶️ **Manual Run (Optional)**
 
 If you want to run it instantly:
@@ -146,10 +182,11 @@ C:\Scripts\FreeRAM_Log.txt
 You’ll see entries like:
 
 ```
-[2025-11-18 14:00:05]
-Before: Total=16GB, Free=3.2GB
-After:  Total=16GB, Free=6.8GB
----------------------------------
+2025-11-18 19:41:33 | Freed: 1.4GB | Before: 10.1GB free -> After: 11.5GB free | Total: 15.5GB
+2025-11-19 10:43:55 | Freed: 5.3GB | Before: 4.1GB free -> After: 9.4GB free | Total: 15.5GB
+2025-11-19 10:56:33 | Freed: 5.7GB | Before: 4GB free -> After: 9.7GB free | Total: 15.5GB
+2025-11-19 11:11:33 | Freed: 3.6GB | Before: 5.5GB free -> After: 9.1GB free | Total: 15.5GB
+2025-11-19 11:26:33 | Freed: 2.7GB | Before: 7.2GB free -> After: 9.9GB free | Total: 15.5GB
 ```
 
 ---
